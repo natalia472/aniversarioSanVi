@@ -1,0 +1,17 @@
+{% extends 'core/base.html' %}
+
+<!--contenido-->
+{% block content %} 
+    {% for noticia in noticia %}
+        <div class="row project">  	
+            <div class="col-lg-3 col-md-4 offset-lg-1">
+                <img class="img-fluid" src="{{noticia.image.url}}" alt="">
+            </div>
+        <div class="col-lg-7 col-md-8">
+                <h2 class="section-heading title">{{noticia.title}}</h2>   
+            <p>As we got further and further away, it [the Earth] diminished in size. Finally it shrank to the size of a marble, the most beautiful you can imagine. That beautiful, warm....</p>
+            <p>{{noticia.description}}</p>
+            </div>
+        </div>
+
+{% endblock %}
